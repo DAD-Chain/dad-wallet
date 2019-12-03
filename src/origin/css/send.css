@@ -1,0 +1,111 @@
+
+.tips{
+    margin-top: 86px;
+}
+
+.private-key{
+    margin-top: 8px;
+}
+
+.amount{
+    width:180px;
+    height:40px;
+    background:rgba(245,245,245,1);
+    border: unset;
+    border-radius:10px;
+    font-size:14px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color: black;
+    line-height:14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+}
+
+.amount_form{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 14px;
+}
+
+.amount_form span{
+    font-size:14px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color:rgba(53,85,255,1);
+    line-height:40px;
+    cursor: pointer;
+    margin-left: 14px;
+}
+
+.amount_form img{
+    width: 16px;
+    height: 16px;
+    /*display: inline-block;*/
+    position: absolute;
+    margin-top:12px;
+    right:110px;
+    display: none;
+}
+
+.btns{
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.password_panel{
+    opacity: 100;
+    top: 408px;
+    position: absolute;
+    width:100%;
+    left:0;
+    height:192px;
+    background:rgba(255,255,255,1);
+    border: unset;
+    border-radius: 10px;
+    z-index: 200;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+.extra-content{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.confirm-panel-title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.confirm-panel-title p{
+    margin-top: 15px;
+    font-size:14px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:500;
+    color:rgba(0,0,0,1);
+    line-height:14px;
+    margin-left: 112px;
+}
+
+.confirm-panel-title img{
+    width: 16px;
+    height: 16px;
+    margin-top: 14px;
+    margin-left: 77px;
+}
+
+.password_panel .input_container{
+    margin-top: 48px;
+    margin-bottom: 0;
+}
+
+.input-form img{
+    left:245px;
+}
+

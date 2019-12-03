@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DAD Wallet</title>
+    <meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tool.css" />
+    <link rel="stylesheet" type="text/css" href="../css/contract.css" />
+</head>
+<body>
+<div class="overlay item-hide"></div>
+<div class="tips contract-tips">The website <span id="site-name">xxx.com</span> is requesting your permission to use a smart contract</div>
+
+<div class="newContainer">
+
+        <div class="cost-container">
+            <div class="cost-desc font-desc" style="float: left;">Cost</div>
+            <div class="cost-value font-desc" style="float: right;">0</div>
+        </div>
+        <div class="divider"></div>
+
+
+        <div class="func-container">
+                <div class="func-desc font-desc" style="float: left;">Function</div>
+                <div class="func-value font-desc" style="float: right;"> 
+                        <span class="func-value-raw">unkown</span> 
+                        <img src="../img/btn-open.png" id="btn-show-args" style="cursor: pointer">
+                        <img src="../img/btn-close.png" id="btn-hide-args" style="cursor: pointer; display: none">
+                </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="args-container"> 
+            <p class="args-details"></p>
+        </div>
+
+        <div class="contract-btns">
+            <button type="button" id="reject" class="btns whiteBtn">Reject</button>
+            <button type="button" id="accept" class="btns blueBtn">Accept</button>
+        </div>
+</div>
+<div class="footer">
+    <p>Powered by DAD.one</p>
+</div>
+
+<div class="loading">
+    <img src="../img/loading.gif">
+</div>
+<div class="toast-wrap"></div>
+
+<script type="text/javascript" src="../lib/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../lib/uuid.min.js"></script>
+<script type="text/javascript" src="../lib/buffer.min.js"></script>
+<script type="text/javascript" src="../lib/dad-sdk.js"></script>
+<script type="text/javascript" src="../lib/ontology-crypto.js"></script>
+<script type="text/javascript" src="../js/api/accountApi.js"></script>
+<script type="text/javascript" src="../js/api/authApi.js"></script>
+<script type="text/javascript" src="../js/api/runtimeApi.js"></script>
+<script type="text/javascript" src="../js/contract.js"></script>
+
+</body>
+</html>

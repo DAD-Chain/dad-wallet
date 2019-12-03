@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon/提示-warning</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,8 C0,3.58125 3.58125,0 8,0 C12.41875,0 16,3.58125 16,8 C16,12.41875 12.41875,16 8,16 C3.58125,16 0,12.41875 0,8 Z M8,13 C8.4425,13 8.8,12.6425 8.8,12.2 C8.8,11.7575 8.4425,11.4 8,11.4 C7.5575,11.4 7.2,11.7575 7.2,12.2 C7.2,12.6425 7.5575,13 8,13 Z M7.73333333,10.1765118 L8.26666667,10.1765118 C8.48758057,10.1765118 8.66666667,9.99742574 8.66666667,9.77651184 L8.66666667,3.2431785 C8.66666667,3.0222646 8.48758057,2.8431785 8.26666667,2.8431785 L7.73333333,2.8431785 C7.51241943,2.8431785 7.33333333,3.0222646 7.33333333,3.2431785 L7.33333333,9.77651184 C7.33333333,9.99742574 7.51241943,10.1765118 7.73333333,10.1765118 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/提示-warning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="形状" fill="#FAAD14" xlink:href="#path-1"></use>
+    </g>
+</svg>

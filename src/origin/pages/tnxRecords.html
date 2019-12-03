@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>popup页</title>
+    <meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tool.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tnx.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tnxrecords.css" />
+</head>
+<body>
+<div class="returnBtnCorner">
+    <img src="../img/chevron.left.png">
+</div>
+<div class="centerTitle">
+    <p>Transaction Record</p>
+</div>
+<div class="overlay item-hide"></div>
+<div class="newContainer">
+    <div class="scroll-field" id="scroll-field">
+        <div class="cover-bar" id="cover-bar"></div>
+    </div>
+    <div class="no-data item-hide">
+        <p>You have no transactions</p>
+    </div>
+</div>
+
+<div class="account_manager item-hide" id="account_manager">
+    <div class="confirm-panel-title"><p class="specialP">Transaction Record</p><img src="../img/close.svg" id="close-panel" style="cursor: pointer"></div>
+    <div class="greyline"></div>
+    <div class="tnxTable">
+        <div class="overview-item">
+            <div class="title">
+                Balance
+            </div>
+            <div class="data" id="amount">
+                10
+            </div>
+            <div class="greyDivider"></div>
+        </div>
+        <div class="overview-item">
+            <img src="../img/copy.svg" class="copy-btn" id="copy_from" data-clipboard-action="copy" data-clipboard-target="#from_address">
+            <div class="title">
+                From
+            </div>
+            <div class="data" id="from_address">
+                APLNbzBE4TA6rmCgPBQtBdbEq9SDSC3tFN
+            </div>
+
+            <div class="greyDivider"></div>
+        </div>
+        <div class="overview-item">
+            <img src="../img/copy.svg" class="copy-btn" id="copy_to" data-clipboard-action="copy" data-clipboard-target="#to_address">
+            <div class="title">
+                To
+            </div>
+            <div class="data" id="to_address">
+                ASnh2mqsDMGXvNetzHuP9PszKGBxM7sEgZ
+            </div>
+
+            <div class="greyDivider"></div>
+        </div>
+        <div class="overview-item">
+            <img src="../img/copy.svg" class="copy-btn" id="copy_hash" data-clipboard-action="copy" data-clipboard-target="#hash_4_copy">
+            <div class="title">
+                TxID
+            </div>
+            <div class="data" id="tx_hash">
+                667950979358cee472..scd2c66d6bbef0fda8d5
+            </div>
+            <div class="greyDivider"></div>
+        </div>
+        <div class="overview-item">
+            <img src="../img/copy.svg" class="copy-btn" id="copy_block" data-clipboard-action="copy" data-clipboard-target="#height">
+            <div class="title">
+                Block
+            </div>
+            <div class="data" id="height">
+                117365
+            </div>
+            <div class="greyDivider"></div>
+        </div>
+        <div class="overview-item">
+            <div class="title">
+                TimeStamp
+            </div>
+            <div class="data" id="timestamp">
+                2019/09/05    17:05:32
+            </div>
+        </div>
+        <p id="hash_4_copy" style="height: 0;opacity: 0;"></p>
+    </div>
+</div>
+
+
+<div class="footer">
+    <p>Powered by DAD.one</p>
+</div>
+<div class="toast-wrap">Network request failed, try again later</div>
+<div class="toast-wrap1">Copied to Clipboard</div>
+<script type="text/javascript" src="../lib/jquery.min.js"></script>
+<script type="text/javascript" src="../lib/clipboard.min.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../js/api/runtimeApi.js"></script>
+<script type="text/javascript" src="../js/tnxRecords.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>popup页</title>
+    <meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tool.css" />
+    <link rel="stylesheet" type="text/css" href="../css/send.css" />
+</head>
+<body>
+<div class="overlay item-hide"></div>
+<div class="returnBtnCorner">
+    <img src="../img/chevron.left.png">
+</div>
+<div class="centerTitle">
+    <p>Send</p>
+</div>
+<div class="newContainer">
+    <div class="tips">Payment Account</div>
+    <div class="private-key">
+        <p class="title-pk"></p>
+    </div>
+    <div class="divider"></div>
+    <div class="input_container">
+        <div class="input-form password">
+            <input type="text" placeholder="Receive Address" id="address"/>
+            <img src="../img/right-green.png" id="addresscorrect">
+            <img src="../img/error-red.png" id="addresserror">
+        </div>
+        <div class="input_error_tips" id="addresswarn">
+        </div>
+    </div>
+
+    <div class="input_container" style="margin-bottom: 0">
+        <div class="amount_form">
+<!--            <input pattern="/^\d.*$/" class="amount" οnfοcus=" this.style.imeMode='disabled' "  placeholder="Transfer Amount" οnkeyup="value=value.replace(/[^\d]/,'') "-->
+<!--                   onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"-->
+<!--                   ID="Text2" NAME="Text2">-->
+            <input ID="Text2" class="amount" placeholder="Transfer Amount">
+            <img src="../img/right-green.png" id="#amountcorrect">
+            <img src="../img/error-red.png" id="#amounterror">
+            <span id="max_button" class="inactive">MAX</span>
+        </div>
+        <div class="input_error_tips" id="amount_warn">
+        </div>
+    </div>
+    <button type="button" id="confirm" class="btns blueBtn inactive">Confirm</button>
+    <button type="button" id="cancel" class="btns transparentBtn">Cancel</button>
+</div>
+<div class="footer">
+    <p>Powered by DAD.one</p>
+</div>
+
+<div class="password_panel item-hide">
+    <div class="confirm-panel-title"><p>Send Confirm</p><img src="../img/close.svg" id="close-panel"></div>
+    <div class="extra-content">
+        <div class="input_container">
+            <div class="input-form password">
+                <input type="password" placeholder="Password" maxlength="16" id="password"/>
+                <img src="../img/error-red.png" id="passworderror">
+            </div>
+            <div class="input_error_tips" id="passwordwarn">
+            </div>
+        </div>
+        <button type="button" id="continue" class="btns blueBtn inactive" style="width:100%">Confirm</button>
+    </div>
+</div>
+
+<div class="loading">
+    <img src="../img/loading.gif">
+</div>
+<div class="toast-wrap"></div>
+
+<script type="text/javascript" src="../lib/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../js/send.js"></script>
+<script type="text/javascript" src="../lib/uuid.min.js"></script>
+<script type="text/javascript" src="../lib/buffer.min.js"></script>
+<script type="text/javascript" src="../lib/dad-sdk.js"></script>
+<script type="text/javascript" src="../lib/ontology-crypto.js"></script>
+<script type="text/javascript" src="../js/api/accountApi.js"></script>
+<script type="text/javascript" src="../js/api/authApi.js"></script>
+<script type="text/javascript" src="../js/api/runtimeApi.js"></script>
+
+
+</body>
+</html>

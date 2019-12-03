@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>popup页</title>
+    <meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/tool.css" />
+    <link rel="stylesheet" type="text/css" href="../css/mapk.css" />
+    <link rel="stylesheet" type="text/css" href="../css/mv.css" />
+    <link rel="stylesheet" type="text/css" href="../css/mwv.css" />
+</head>
+<body>
+<div class="returnBtnCorner">
+    <img src="../img/chevron.left.png">
+</div>
+<div class="centerTitle">
+    <p>Confirm Mnemonic Phrase</p>
+</div>
+<div class="newContainer">
+    <div class="tips">You must now confirm your mnemonic phrase.Select the words below in the correct order.</div>
+    <div>
+        <textarea rows="10" cols="30" id="mnword" readonly="readonly" class="textarea"></textarea>
+        <div class="input_error_tips" id="mnwordwordwarn">
+        </div>
+    </div>
+
+    <div id="buttonGroup" class="mnemonic_word">
+
+    </div>
+
+    <button type="button" id="confirm" class="btns blueBtn inactive">Confirm</button>
+</div>
+<div class="footer">
+    <p>Powered by DAD.one</p>
+
+</div>
+<script type="text/javascript" src="../lib/jquery.min.js"></script>
+<script type="text/javascript" src="../js/mwv.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+
+</body>
+</html>

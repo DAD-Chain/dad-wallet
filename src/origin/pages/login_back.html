@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html style="width:320px; max-width: 320px;">
+<head>
+    <title>popup页</title>
+    <meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tool.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login_back.css" />
+</head>
+<body>
+<div class="returnBtnCorner" id="returnBtnCorner">
+    <img src="../img/chevron.left.png">
+</div>
+<div class="centerTitle">
+    <p>Welcome Back</p>
+</div>
+<div class="newContainer">
+    <img src="../img/DADLogo.svg" class="image" style="width: 156px; height: 72px;">
+    <div id="selectButton" class="selectButton">
+        account1
+    </div>
+
+
+    <div class="input_container">
+        <div class="input-form re-password">
+            <input type="password" placeholder="Password" maxlength="16" id="password"/>
+            <img src="../img/right-green.png" id="passwordcorrect">
+            <img src="../img/error-red.png" id="passworderror">
+        </div>
+        <div class="input_error_tips" id="passwordwarn">
+        </div>
+    </div>
+
+    <button type="button" id="continue" class="btns blueBtn inactive" style="width:100%">Continue</button>
+</div>
+
+<div class="account_selection item-hide" id="account_panel">
+    <div class="confirm-panel-title">
+        <p>Select Account</p><img src="../img/close.svg" id="close-panel">
+    </div>
+    <!-- <div class="divider title-divider"></div> -->
+    <div class="scroll-field" id="scroll-field">
+        <div class="cover-bar" id="cover-bar"></div>
+    </div>
+</div>
+
+<div class="overlay item-hide"></div>
+
+<div class="footer">
+    <p>Powered by DAD.one</p>
+</div>
+
+
+<script type="text/javascript" src="../lib/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../js/login_back_page.js"></script>
+<script type="text/javascript" src="../lib/uuid.min.js"></script>
+<script type="text/javascript" src="../lib/buffer.min.js"></script>
+<script type="text/javascript" src="../js/api/accountApi.js"></script>
+<script type="text/javascript" src="../js/api/authApi.js"></script>
+<script type="text/javascript" src="../js/api/runtimeApi.js"></script>
+</body>
+</html>

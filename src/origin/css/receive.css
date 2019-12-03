@@ -1,0 +1,22 @@
+
+#qrcode{
+    margin-top: 154px;
+}
+
+.tips{
+    margin-top: 49px;
+}
+
+.private-key{
+    width: 100%;
+    text-align: center;
+}
+
+.private-key p{
+    font-size:14px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;;
+    font-weight:500;
+    word-break: break-all;
+    color:rgba(0,0,0,1);
+    line-height:16px;
+}

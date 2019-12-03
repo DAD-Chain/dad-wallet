@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html style="width:320px; max-width: 320px;">
+<head>
+    <title>popup页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8;user-scalable=no" />
+<!--    <link rel="preload" as="font" href="../fonts/SF-Pro-Text-Bold.woff2" type="font/woff2" crossorigin="anonymous">-->
+<!--    <link rel="preload" as="font" href="../fonts/SF-Pro-Text-Medium.woff2" type="font/woff2" crossorigin="anonymous">-->
+<!--    <link rel="preload" as="font" href="../fonts/SF-Pro-Text-Semibold.woff2" type="font/woff2" crossorigin="anonymous">-->
+<!--    <link rel="preload" as="font" href="../fonts/SF-Pro-Text-Regular.woff2" type="font/woff2" crossorigin="anonymous">-->
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tool.css" />
+
+</head>
+<body>
+    <div class="overlay item-hide"></div>
+    <div class="newContainer">
+        <img src="../img/DADLogo.svg" class="image" style="width: 156px; height: 72px;">
+        <div  class="signBtnPlaceHolder"></div>
+        <button type="button" id="sign_in" class="btns blueBtn">Sign In</button>
+        <button type="button" id="new_account" class="btns whiteBtn">New Account</button>
+        <button type="button" id="restore_account" class="btns transparentBtn">Restore Account</button>
+    </div>
+    <div class="footer">
+        <p>Powered by DAD.one</p>
+    </div>
+    <div class="password_panel item-hide">
+        <div class="confirm-panel-title"><p>Send Confirm</p><img src="../img/close.svg" id="close-panel"></div>
+        <div class="extra-content">
+            <button type="button" id="mn_phrase" class="btns blueBtn" style="width:100%">Mnemonics Phrase</button>
+            <button type="button" id="pk" class="btns blueBtn" style="width:100%">Private Key</button>
+        </div>
+    </div>
+    <div class="toast-wrap">Users can only create up to 10 accounts</div>
+<script type="text/javascript" src="../lib/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>
+<script type="text/javascript" src="../lib/uuid.min.js"></script>
+<script type="text/javascript" src="../lib/buffer.min.js"></script>
+<script type="text/javascript" src="../lib/dad-sdk.js"></script>
+<script type="text/javascript" src="../lib/ontology-crypto.js"></script>
+<script type="text/javascript" src="../js/api/accountApi.js"></script>
+<script type="text/javascript" src="../js/api/authApi.js"></script>
+<script type="text/javascript" src="../js/api/runtimeApi.js"></script>
+</body>
+
+</html>

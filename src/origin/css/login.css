@@ -1,0 +1,68 @@
+
+
+
+.signBtn{
+    margin-top: 157px;
+}
+.signBtnPlaceHolder{
+    margin-top: 120px;
+}
+
+.image{
+    margin-top: 84px;
+    width: 156px;
+    height: 72px;
+}
+
+.password_panel{
+    top: 408px;
+    position: absolute;
+    width:100%;
+    height:192px;
+    background:rgba(255,255,255,1);
+    border: unset;
+    border-radius: 10px;
+    z-index: 200;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    left: 0;
+}
+
+.confirm-panel-title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.confirm-panel-title p{
+    margin-top: 15px;
+    font-size:14px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:500;
+    color:rgba(0,0,0,1);
+    line-height:14px;
+    margin-left: 112px;
+}
+
+.confirm-panel-title img{
+    width: 16px;
+    height: 16px;
+    margin-top: 14px;
+    margin-left: 77px;
+}
+
+.password_panel .input_container{
+    margin-top: 48px;
+    margin-bottom: 0;
+}
+
+#mn_phrase{
+    margin-top: 58px;
+}
+
+.extra-content{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}

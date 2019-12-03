@@ -1,0 +1,122 @@
+.image{
+    margin-top: 84px;
+    margin-bottom: 84px;
+}
+
+.account_selection{
+    top: 408px;
+    position: absolute;
+    width:100%;
+    height:192px;
+    left:0;
+    background:rgba(255,255,255,1);
+    border: unset;
+    border-radius: 10px;
+    z-index: 200;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.confirm-panel-title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.confirm-panel-title p{
+    margin-top: 15px;
+    font-size:14px;
+    font-family:'PingFang SC','SF Pro SC','PingFang SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:14px;
+    margin-left: 112px;
+}
+
+.confirm-panel-title img{
+    width: 16px;
+    height: 16px;
+    margin-top: 14px;
+    margin-left: 77px;
+}
+
+.divider{
+    width: 85%;
+    margin: 0 auto;
+}
+.title-divider{
+    margin-top: 46px;
+}
+.account_item{
+    width: 85%;
+    height: 44px;
+    cursor: pointer;
+}
+
+.account_item p{
+    font-size:14px;
+    line-height:14px;
+    font-family:'PingFang SC','SF Pro SC','PingFang SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    color:rgba(0,0,0,1);
+    padding-left: 33px;
+    font-weight:400;
+
+
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.scroll-field{
+    width: 318px;
+    margin-top: 46px;
+    height: 140px;
+}
+
+.selectButton{
+    width: 240px;
+    height: 40px;
+    padding: 0;
+    border: unset;
+    border-radius:10px;
+    border:1px solid rgba(232,232,232,1);
+    max-width: 240px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    position: relative;
+
+    font-size:14px;
+    font-family:'PingFang SC','SF Pro SC','PingFang SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:40px;
+    text-align: center;
+}
+
+.selectButton:after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+.cover-bar{
+    top:35px;
+    right:2px;
+}

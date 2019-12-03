@@ -1,0 +1,195 @@
+
+.newContainer{
+    width: 280px;
+}
+
+.new-account{
+    margin-top: 59px;
+    height:32px;
+    background: #F5F5F5;
+    border: unset;
+    border-radius:10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+}
+
+.new-account img{
+    opacity: 0.2;
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+    top: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.new-account p {
+    font-size:14px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:500;
+    color: black;
+    line-height:32px;
+    margin: 0;
+}
+
+.restore{
+    margin-top: 10px;
+    height:32px;
+    background:#F5F5F5;
+    border: unset;
+    border-radius:10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+}
+
+.restore img{
+    opacity: 0.2;
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+    top: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.restore p {
+    font-size:14px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:500;
+    color:black;
+    line-height:32px;
+    margin: 0;
+}
+
+
+.export{
+    margin-top: 10px;
+    height:32px;
+    background:#F5F5F5;
+    border: unset;
+    border-radius:10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+}
+
+.export p{
+    font-size:14px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:500;
+    color:black;
+    line-height:32px;
+    margin: 0;
+}
+
+.export img{
+    opacity: 0.2;
+    width: 18px;
+    height: 18px;
+
+    position: relative;
+    top: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.logout{
+    left: 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 72px;
+}
+
+.password_panel{
+    top: 408px;
+    position: absolute;
+    width:100%;
+    height:192px;
+    left:0;
+    background:rgba(255,255,255,1);
+    border: unset;
+    border-radius: 10px;
+    z-index: 200;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.confirm-panel-title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.confirm-panel-title p{
+    margin-top: 15px;
+    font-size:14px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:500;
+    color:rgba(0,0,0,1);
+    line-height:14px;
+    margin-left: 132px;
+}
+
+.specialP{
+    margin-left: 108px !important;
+}
+
+.confirm-panel-title img{
+    width: 16px;
+    height: 16px;
+    margin-top: 14px;
+    margin-left: 77px;
+}
+.specialB{
+    margin-left: 102px !important;
+}
+
+.password_panel .input_container{
+    margin-top: 48px;
+    margin-bottom: 0;
+}
+
+#mn_phrase{
+    margin-top: 58px;
+}
+
+.extra-content{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.transparentBtn{
+    margin-bottom: 0;
+}
+
+.input-form img{
+    left:245px;
+}

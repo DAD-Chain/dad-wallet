@@ -1,0 +1,382 @@
+
+
+.logo_corner{
+    position: absolute;
+    left:20px;
+    top:16px;
+}
+
+.newContainer{
+    width: 280px;
+}
+
+.setting{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right:20px;
+    top:18px;
+    cursor: pointer;
+}
+
+.account{
+    position: absolute;
+    right:68px;
+    top:14px;
+    cursor: pointer;
+}
+
+.switchBtn{
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.data-panel{
+    width: 264px;
+    background:rgba(117,140,170,1);
+    border: unset;
+    border-radius:10px;
+    padding-left: 16px;
+    padding-top: 24px;
+    margin-top: 59px;
+    text-align: left;
+    padding-bottom: 26px;
+}
+
+.nickname{
+    font-size:16px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:16px;
+    margin-bottom: 8px;
+}
+
+.private-key{
+    font-size:12px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color:rgba(162,190,220,1);
+    line-height:16px;
+    margin-bottom: 23px;
+    text-align: left;
+    display: flex;
+}
+
+.private-key span{
+    height: 16px;
+}
+
+.private-key img{
+    margin-left: 4px;
+}
+
+.value{
+    font-size:20px;
+    font-family:'PingFangSCRegular','SF Pro SC','PingFang SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:20px;
+}
+
+.homeButtons{
+    display: flex;
+    margin-top: 10px;
+}
+
+.special{
+    margin-right: 8px;
+}
+
+.homeButton{
+    width:135px;
+    height:53px;
+    text-align: center;
+    background:rgba(245,245,245,1);
+    border: unset;
+    border-radius:10px;
+    padding-top: 11px;
+    cursor: pointer;
+}
+
+.transactionBtn{
+    text-align: center;
+    margin-top: 10px;
+    width:280px;
+    padding-top: 14px;
+    height:26px;
+}
+
+.homeButton p{
+    font-size:12px;
+    font-family:'Helvetica','PingFang SC', 'SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:500;
+    color:rgba(0,0,0,1);
+    line-height:12px;
+    margin-top: 5px;
+}
+
+.transactionBtn p{
+    margin: 0 auto;
+    margin-top: 0;
+    text-align: center;
+    width:105px;
+    height:12px;
+    font-size:12px;
+    font-family:'Helvetica','PingFang SC', 'SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    color:rgba(0,0,0,1);
+    font-weight:500;
+    line-height:12px;
+}
+
+.homeButton img{
+    width: 19px;
+    height: auto;
+}
+
+.copy-button{
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    margin-left: 12px !important;
+}
+.scroll-field{
+    padding-right: 20px;
+    margin-top: 14px;
+    height: 558px;
+    width: 270px;
+}
+
+.account_manager{
+    top:0;
+    position: absolute;
+    width: 292px;
+    height: 600px;
+    left: 0;
+    background: white;
+    z-index: 200;
+}
+
+.confirm-panel-title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.confirm-panel-title p{
+    margin-left: 31px;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:14px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+}
+
+.confirm-panel-title img{
+
+    width: 16px;
+    height: 16px;
+    margin-top: 14px;
+    margin-left: 88px;
+}
+
+.cover-bar {
+    position: absolute;
+    background: #fff;;
+    height: 100%;
+    top: 55px;
+    right: 2px;
+    width: 5px;
+    -webkit-transition: all .5s;
+    opacity: 1;
+}
+
+.show-cover-bar{
+    opacity: 0;
+    -webkit-transition: all .5s;
+}
+
+.selectAccount{
+    float: right;
+    width: 15px;
+    height: auto;
+    margin-top: -3px;
+    margin-right: 12px;
+}
+
+.deleteAccount{
+    float: right;
+    margin-top: 8px;
+    width: 14px;
+    height: 14px;
+    border: none;
+    border-image-width: 0;
+    margin-right: 13px;
+    cursor: pointer;
+    opacity: 0.2;
+    background-image: url('../img/delete-hover.svg');
+    background-size: contain;
+}
+
+.deleteAccount:hover{
+    opacity: 0.4;
+}
+
+.deleteAccount_select{
+    float: right;
+    margin-top: 8px;
+    width: 14px;
+    height: 14px;
+    border: none;
+    border-image-width: 0;
+    margin-right: 13px;
+    cursor: pointer;
+    opacity: 0.6;
+    background-image: url('../img/delete.svg');
+    background-size: contain;
+}
+
+.password_panel{
+    opacity: 100;
+    top: 394px;
+    position: absolute;
+    width:100%;
+    left:0;
+    height:206px;
+    background:rgba(255,255,255,1);
+    border: unset;
+    border-radius: 10px;
+    z-index: 202;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+.greyline{
+    width: 292px;
+    margin-top:44px;
+    left: 0px;
+}
+
+.account_username{
+    margin: 0;
+    font-size:16px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:16px;
+}
+
+.account_address{
+    margin: 0;
+    margin-top: 8px;
+    font-size:12px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color:rgba(162,190,220,1);
+    line-height:12px;
+}
+
+.account_item{
+    width: 236px;
+    height: 40px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background:rgba(245,245,245,1);
+    border-radius:10px;
+
+    cursor: pointer;
+}
+
+.account_item1{
+    margin-left: 20px;
+    width: 252px;
+    height: 72px;
+    margin-bottom: 14px;
+}
+
+.account_item2{
+    margin-left: 20px;
+    width: 252px;
+    height: 72px;
+    margin-bottom: 14px;
+}
+
+.hoverItem{
+    margin-left: -4px !important;
+    margin-bottom: 4px !important;
+}
+
+
+.placeHolder{
+    height: 20px;
+    width: 100%;
+}
+
+.account_item_select{
+    background:rgba(53,79,255,1);
+}
+
+
+
+.account_username_select{
+    color:rgba(255,255,255,1);
+}
+
+.overlay1{
+    position: fixed;
+    left:0;
+    background:rgba(0,0,0,0.4);
+    width: 100%;
+    height: 2000px;
+    top:0;
+    opacity: 0;
+    z-index:201;
+}
+
+.extra-content{
+    margin-top: 28px;
+    text-align: center;
+    display: flex;
+}
+
+.warning-panel-title{
+    margin-top: 27px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.warning-panel-title p{
+    margin: 0;
+    font-size:14px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color:rgba(0,0,0,0.4);
+    line-height:16px;
+}
+
+.warning-panel-title img{
+    margin-left: 91px;
+    margin-right: 10px;
+}
+
+.warning-tips{
+    text-align: center;
+    margin-top: 16px;
+    font-size:16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family:'PingFang SC','SF Pro SC','Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:24px;
+}
+
+.deleteBtns{
+    width: 130px;
+    height: 40px;
+}
+

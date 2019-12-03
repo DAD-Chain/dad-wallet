@@ -1,0 +1,51 @@
+.scroll-field{
+    height: 540px;
+}
+
+.tnxTable{
+    margin-top: 23px;
+}
+
+.overview-item{
+    text-align: left;
+}
+
+.title{
+    font-size:12px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color:rgba(0,0,0,0.4);
+    line-height:16px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.data{
+    max-width: 227px;
+    font-size:13px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:19px;
+    margin-bottom: 10px;
+    word-break: break-all;
+    margin-left: 20px;
+}
+
+.greyline{
+    margin-bottom: 10px;
+}
+
+.btns{
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.copy-btn{
+    width: 14px;
+    height: 14px;
+    float: right;
+    margin-right: 22px;
+    margin-top: 22px;
+    cursor: pointer;
+}

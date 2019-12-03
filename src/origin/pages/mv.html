@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>popup页</title>
+    <meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/tool.css" />
+    <link rel="stylesheet" type="text/css" href="../css/mapk.css" />
+    <link rel="stylesheet" type="text/css" href="../css/mv.css" />
+</head>
+<body>
+<div class="returnBtnCorner">
+    <img src="../img/chevron.left.png">
+</div>
+<div class="centerTitle">
+    <p>Mnemonic Verification</p>
+</div>
+<div class="newContainer">
+    <div class="tips">Please enter the mnemonic,separated by spaces.</div>
+    <div>
+        <textarea rows="10" cols="30" id="mnword" class="textarea"></textarea>
+        <div class="input_error_tips" id="mnwordwordwarn">
+        </div>
+    </div>
+
+    <div class="input-form account_name">
+        <input type="text" placeholder="Account Name" maxlength="16" id="username"/>
+        <img src="../img/right-green.png" id="usernamecorrect">
+        <img src="../img/error-red.png" id="usernameerror">
+    </div>
+    <div class="input_error_tips" id="usernamewarn">
+    </div>
+
+    <div class="input_container">
+        <div class="input-form password">
+            <input type="password" placeholder="Set Your Password" maxlength="16" id="passwordInput"/>
+            <img src="../img/right-green.png" id="passwordcorrect">
+            <img src="../img/error-red.png" id="passworderror">
+        </div>
+        <div class="input_error_tips" id="passwordwarn">
+        </div>
+    </div>
+    <div class="input_container">
+        <div class="input-form re-password">
+            <input type="password" placeholder="Repeat Password" maxlength="16" id="passwordInput1"/>
+            <img src="../img/right-green.png" id="password1correct">
+            <img src="../img/error-red.png" id="password1error">
+        </div>
+        <div class="input_error_tips" id="password1warn">
+        </div>
+    </div>
+    <button type="button" id="confrim" class="btns blueBtn inactive">Confirm</button>
+</div>
+<div class="footer">
+    <p>Powered by DAD.one</p>
+
+</div>
+<script type="text/javascript" src="../lib/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../js/mv_page.js"></script>
+<script type="text/javascript" src="../lib/uuid.min.js"></script>
+<script type="text/javascript" src="../lib/buffer.min.js"></script>
+<script type="text/javascript" src="../lib/dad-sdk.js"></script>
+<script type="text/javascript" src="../lib/ontology-crypto.js"></script>
+<script type="text/javascript" src="../js/api/accountApi.js"></script>
+<script type="text/javascript" src="../js/api/authApi.js"></script>
+<script type="text/javascript" src="../js/api/runtimeApi.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+.newContainer{
+    width: 280px;
+}
+.tips{
+    margin-top: 58px;
+    font-size: 13px;
+    color: black;
+    opacity: 0.4;
+    text-align: left;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    line-height: 16px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cost-container{
+    margin-top: 30px;
+    padding-bottom: 15px;
+}
+.func-container{
+    margin-top: 30px;
+    padding-bottom: 15px;
+}
+.font-desc{
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.args-container{
+    display: none;
+
+    font-size:13px;
+    font-family:'PingFang SC','SF Pro SC', 'Microsoft YaHei', 'Source Han Sans SC', sans-serif;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:20px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.args-details{
+    margin-top: 20px;
+    padding: 10px;
+    background:rgba(245,245,245,1);
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    max-height: 150px;
+}
+
+.contract-btns{
+    margin-top: 40px;
+    display: flex; 
+}
+
+#reject{
+    margin-right: 15px;
+}

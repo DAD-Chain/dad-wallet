@@ -1,0 +1,43 @@
+@font-face {
+    font-family: SFProTextMedium;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src:
+    local(SFProTextMedium),
+    url("../fonts/SF-PRO-TEXT-Medium.woff2")format('woff2');
+}
+@font-face {
+    font-family: SFProTextRegular;
+    src:
+    local(SFProTextRegular),
+    url("../fonts/SF-PRO-TEXT-Regular.woff2")format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: SFProTextBold;
+    src:
+    local(SFProTextBold),
+    url("../fonts/SF-PRO-TEXT-Bold.woff2")format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+}
+@font-face {
+    font-family: SFProTextSemibold;
+    src:
+    local(SFProTextSemibold),
+    url("../fonts/SF-PRO-TEXT-Semibold.woff2")format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+}
+
+

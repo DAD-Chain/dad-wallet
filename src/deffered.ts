@@ -1,0 +1,58 @@
+/*
+ * Copyright (C) 2018 Matus Zamborsky
+ * This file is part of The Ontology Wallet&ID.
+ *
+ * The The Ontology Wallet&ID is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * The Ontology Wallet&ID is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with The Ontology Wallet&ID.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+// tslint:disable:variable-name
+export class Deferred<T> {
+  private _promise: Promise<T>;
+  private _resolve: (value?: T | PromiseLike<T>) => void;
+  private _reject: (reason?: any) => void;
+
+  private _done : boolean = false;
+
+  constructor() {
+    this._promise = new Promise<T>((resolve, reject) => {
+      this._resolve = resolve;
+      this._reject = reject;
+      this._done = false;
+    });
+  }
+
+  get promise(): Promise<T> {
+    return this._promise;
+  }
+
+  public resolve = (value?: T | PromiseLike<T>): void => {
+    if(this._done){
+      console.log('promise is done, skip');
+    }
+    this._done = true;
+    this._resolve(value);
+  };
+
+  public reject = (reason?: any): void => {
+    if(this._done){
+      console.log('promise is done, skip');
+    }
+    this._done = true;
+    this._reject(reason);
+  };
+
+  public isDone = (): boolean =>{
+    return this._done;
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>popup页</title>
+    <meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/tool.css" />
+    <link rel="stylesheet" type="text/css" href="../css/mapk.css" />
+    <link rel="stylesheet" type="text/css" href="../css/mv.css" />
+    <link rel="stylesheet" type="text/css" href="../css/pkv.css" />
+</head>
+<body>
+<div class="returnBtnCorner">
+    <img src="../img/chevron.left.png">
+</div>
+<div class="centerTitle">
+    <p>Private key Verification</p>
+</div>
+<div class="newContainer">
+    <div class="tips">Please  enter your Private key.</div>
+    <div class="input_container">
+        <div class="input-form password">
+            <input type="text" placeholder="Private Key" id="privatekey"/>
+            <img src="../img/right-green.png" id="pkcorrect">
+            <img src="../img/error-red.png" id="pkerror">
+        </div>
+        <div class="input_error_tips" id="pkwarn">
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="input-form account_name">
+        <input type="text" placeholder="Account Name" maxlength="16" id="username"/>
+        <img src="../img/right-green.png" id="usernamecorrect">
+        <img src="../img/error-red.png" id="usernameerror">
+    </div>
+    <div class="input_error_tips" id="usernamewarn">
+    </div>
+    <div class="input_container">
+        <div class="input-form password">
+            <input type="password" placeholder="Set Your Password" maxlength="16" id="passwordInput"/>
+            <img src="../img/right-green.png" id="passwordcorrect">
+            <img src="../img/error-red.png" id="passworderror">
+        </div>
+        <div class="input_error_tips" id="passwordwarn">
+        </div>
+    </div>
+    <div class="input_container">
+        <div class="input-form re-password">
+            <input type="password" placeholder="Repeat Password" maxlength="16" id="passwordInput1"/>
+            <img src="../img/right-green.png" id="passwordcorrect1">
+            <img src="../img/error-red.png" id="passworderror1">
+        </div>
+        <div class="input_error_tips" id="passwordwarn1">
+        </div>
+    </div>
+    <button type="button" id="confrim" class="btns blueBtn inactive" style="width:100%">Confirm</button>
+</div>
+<div class="footer">
+    <p>Powered by DAD.one</p>
+
+</div>
+<script type="text/javascript" src="../lib/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../js/pkv_page.js"></script>
+<script type="text/javascript" src="../lib/uuid.min.js"></script>
+<script type="text/javascript" src="../lib/buffer.min.js"></script>
+<script type="text/javascript" src="../lib/dad-sdk.js"></script>
+<script type="text/javascript" src="../lib/ontology-crypto.js"></script>
+<script type="text/javascript" src="../js/api/accountApi.js"></script>
+<script type="text/javascript" src="../js/api/authApi.js"></script>
+<script type="text/javascript" src="../js/api/runtimeApi.js"></script>
+
+</body>
+</html>
