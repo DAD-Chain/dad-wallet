@@ -29,6 +29,10 @@ function updateUI(op, args) {
         $('.func-value-raw').text("contribute");
     }else if(op === 'makePlaceADTx'){
         $('.func-value-raw').text("placeAd");
+    }else if(op === 'makePlaceSlotTx'){
+        $('.func-value-raw').text("placeSlot");
+    }else if(op === 'makeChangeSlotStatusTx'){
+        $('.func-value-raw').text("modifyStatus");
     }
 
     //设置函数cost
@@ -153,6 +157,10 @@ async function onAccept() {
         return await makeContribute(args);
     }else if(op === 'makePlaceADTx'){
         return await makePlaceAD(args);
+    }else if(op === 'makePlaceSlotTx'){
+        return await makePlaceSlot(args);
+    }else if(op === 'makeChangeSlotStatusTx'){
+        return await makeChangeSlotStatus(args);
     }else{
         return Promise.reject('UNSPPORT')
     }
@@ -200,4 +208,27 @@ async function makePlaceAD(args) {
         creative
     } = args;
     return await makePlaceADTx(advertiser,adType,token,bid,begin,expire,orderID,capaignName,capaignLink,contries,slots,creative);
+}
+
+async function makePlaceSlot(args) {
+    const {
+        creator,
+        id,
+        name,
+        type,
+        width,
+        height,
+        impression,
+        ctr
+    } = args;
+
+    return await makePlaceSlotTx(creator, id, name, type, width, height, impression, ctr)
+}
+
+async function makeChangeSlotStatus(args) {
+    const {
+        slotID,
+        status
+    } = args;
+    return await makeChangeSlotStatusTx(slotID, status)
 }

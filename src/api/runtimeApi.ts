@@ -3,11 +3,11 @@ import {Crypto, RpcClient, DadAssetTxBuilder, TransactionBuilder, DadContractV2}
 
 
 const DEFAULT_GAS_LIMIT = 200000;
-const url_rpc  = "https://explorer.dad.one/test/rpc";
-const url_rest = "https://explorer.dad.one/test/api/v2";
+// const url_rpc  = "https://explorer.dad.one/test/rpc";
+// const url_rest = "https://explorer.dad.one/test/api/v2";
 
-// const url_rpc  = "http://172.20.120.35:21336";
-// const url_rest = "http://172.20.120.35:8585/v2";
+const url_rpc  = "http://172.20.120.35:21336";
+const url_rest = "http://172.20.120.35:8585/v2";
 
 /**
  * 转账api

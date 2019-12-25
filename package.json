@@ -1,6 +1,6 @@
 {
   "name": "chrome-extension-typescript-starter",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "chrome-extension-typescript-starter",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,8 @@
     "url": "https://github.com/chibat/chrome-extension-typescript-starter.git"
   },
   "dependencies": {
-    "dad-dapi": "0.0.1",
-    "dad-ts-sdk": "1.0.0",
+    "dad-dapi": "0.0.5",
+    "dad-ts-sdk": "^1.0.6",
     "lodash": "^4.17.15",
     "ontology-ts-crypto": "^0.1.24",
     "terser-webpack-plugin": "^2.2.1",

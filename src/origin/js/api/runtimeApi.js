@@ -1,11 +1,11 @@
 var bg = chrome.extension.getBackgroundPage();
 
 const DEFAULT_GAS_LIMIT = 200000;
-const url_rpc  = "https://explorer.dad.one/test/rpc";
-const url_rest = "https://explorer.dad.one/test/api/v2";
+// const url_rpc  = "https://explorer.dad.one/test/rpc";
+// const url_rest = "https://explorer.dad.one/test/api/v2";
 
-// const url_rpc  = "http://172.20.120.35:21336";
-// const url_rest = "http://172.20.120.35:8585/v2";
+const url_rpc  = "http://172.20.120.35:21336";
+const url_rest = "http://172.20.120.35:8585/v2";
 
 /**
  * 转账api
@@ -226,3 +226,56 @@ async function transfer(wallet, ToAddr,  password, amount) {
       Ont.TransactionBuilder.signTransaction(tx, pko);
       return await rpcClient.sendRawTransaction(tx.serialize());
   }
+
+
+  async function makePlaceSlotTx(
+    creator, //string
+    id, //string
+    name, //string
+    type, //string
+    width, //number
+    height, //number
+    impression, //number
+    ctr //number
+  ) {
+
+    let addr = getAddress(bg.wallet_str);
+    const pk  = getPKByAddr(addr);
+    const pko =  getPrivateKeyObject(pk);
+    const rpcClient = new Ont.RpcClient(url_rpc);
+
+    creator = new Ont.Crypto.Address(creator);
+    addr = new Ont.Crypto.Address(addr);
+
+    console.log('make slot creator', creator)
+
+    const tx = Ont.DadContractV2.makePlaceSlotTx(creator, id, name, type, width, height,impression,ctr,addr, 0, 100000);
+    Ont.TransactionBuilder.signTransaction(tx, pko);
+    return await rpcClient.sendRawTransaction(tx.serialize());
+  }
+
+  async function makeChangeSlotStatusTx(
+    slotID, //string
+    status, //number
+  ) {
+
+    let addr = getAddress(bg.wallet_str);
+    const pk  = getPKByAddr(addr);
+    const pko =  getPrivateKeyObject(pk);
+    const rpcClient = new Ont.RpcClient(url_rpc);
+
+    addr = new Ont.Crypto.Address(addr);
+
+    console.log('makeChangeSlotStatusTx, slotID', slotID)
+    console.log('makeChangeSlotStatusTx, status', status)
+
+
+    console.log('makeChangeSlotStatusTx, addr', addr)
+    console.log('makeChangeSlotStatusTx, Ont.DadContractV2.makeChangeSlotStatusTx', Ont.DadContractV2.makeChangeSlotStatusTx)
+
+    const tx = Ont.DadContractV2.makeChangeSlotStatusTx(slotID, status,addr, 0, 100000);
+    Ont.TransactionBuilder.signTransaction(tx, pko);
+    return await rpcClient.sendRawTransaction(tx.serialize());
+  }
+
+
