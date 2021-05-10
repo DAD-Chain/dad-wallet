@@ -18,7 +18,7 @@
   "dependencies": {
     "dad-dapi": "0.0.5",
     "dad-ts-sdk": "^1.0.6",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "ontology-ts-crypto": "^0.1.24",
     "terser-webpack-plugin": "^2.2.1",
     "uuid": "^3.3.3",
