@@ -29,14 +29,14 @@
     "@types/jest": "^24.0.19",
     "@types/jquery": "^3.3.30",
     "before-build-webpack": "^0.2.9",
-    "copy-webpack-plugin": "^5.0.3",
+    "copy-webpack-plugin": "^11.0.0",
     "jest": "^24.9.0",
     "rimraf": "^2.6.3",
     "ts-jest": "^24.1.0",
-    "ts-loader": "^5.4.5",
+    "ts-loader": "^9.4.2",
     "typescript": "~3.4.5",
-    "webpack": "~4.17.2",
-    "webpack-cli": "~3.1.0",
+    "webpack": "~5.75.0",
+    "webpack-cli": "~5.0.1",
     "webpack-merge": "~4.2.1"
   }
 }
